@@ -81,34 +81,34 @@ int findElementIndexByValueInArrayWithBinarySearch(int value, int* targetArray)
 }
 
 void sortArrayWithQsort(/*out parameter*/ int* arrayToSort, int sizeOfArray) {
-    int sortStartIndex = 0;
-    int sortEndIndex = sizeOfArray - 1;
+    int sortLeftBoundIndex = 0;
+    int sortRightBoundIndex = sizeOfArray - 1;
 
     int middleElement = arrayToSort[sizeOfArray / 2];
 
     do {
-        while (arrayToSort[sortStartIndex] < middleElement) {
-            sortStartIndex++;
+        while (arrayToSort[sortLeftBoundIndex] < middleElement) {
+            sortLeftBoundIndex++;
         }
 
-        while (arrayToSort[sortEndIndex] > middleElement) {
-            sortEndIndex--;
+        while (arrayToSort[sortRightBoundIndex] > middleElement) {
+            sortRightBoundIndex--;
         }
 
-        if (sortStartIndex <= sortEndIndex) {
-            int temporarySortStartElement = arrayToSort[sortStartIndex];
-            arrayToSort[sortStartIndex] = arrayToSort[sortEndIndex];
-            arrayToSort[sortEndIndex] = temporarySortStartElement;
+        if (sortLeftBoundIndex <= sortRightBoundIndex) {
+            int currentSortLeftBoundElement = arrayToSort[sortLeftBoundIndex];
+            arrayToSort[sortLeftBoundIndex] = arrayToSort[sortRightBoundIndex];
+            arrayToSort[sortRightBoundIndex] = currentSortLeftBoundElement;
 
-            sortStartIndex++;
-            sortEndIndex--;
+            sortLeftBoundIndex++;
+            sortRightBoundIndex--;
         }
-    } while (sortStartIndex <= sortEndIndex);
+    } while (sortLeftBoundIndex <= sortRightBoundIndex);
 
-    if (sortEndIndex > 0) {
-        sortArrayWithQsort(arrayToSort, sortEndIndex + 1);
+    if (sortRightBoundIndex > 0) {
+        sortArrayWithQsort(arrayToSort, sortRightBoundIndex + 1);
     }
-    if (sortStartIndex < sizeOfArray) {
-        sortArrayWithQsort(&arrayToSort[sortStartIndex], sizeOfArray - sortStartIndex);
+    if (sortLeftBoundIndex < sizeOfArray) {
+        sortArrayWithQsort(&arrayToSort[sortLeftBoundIndex], sizeOfArray - sortLeftBoundIndex);
     }
 }
