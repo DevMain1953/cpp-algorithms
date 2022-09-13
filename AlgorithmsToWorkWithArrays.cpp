@@ -13,7 +13,7 @@ int main() {
     int value;
     int foundIndex = 0;
 
-    cout << "Введите 10 чисел для заполнения массива: " << endl;
+    cout << "Enter 10 numbers to fill array: " << endl;
 
     for (int i = 0; i < 10; i++) {
         cin >> targetArray[i];
@@ -32,18 +32,18 @@ int main() {
         cout << targetArray[index] << " ";
     }
 
-    cout << endl << "Введите ключ: ";
+    cout << endl << "Enter value: ";
 
     cin >> value;
     foundIndex = findElementIndexByValueInArrayWithBinarySearch(value, targetArray);
 
     if (foundIndex > -1)
     {
-        cout << "Индекс элемента " << value << " в массиве равен: " << foundIndex << endl;
+        cout << "Index of element " << value << " in array is: " << foundIndex << endl;
     }
     else
     {
-        cout << "Извините, но такого элемента в массиве нет";
+        cout << "Sorry, but array doesn't contains such element";
     }
 
     system("pause");
