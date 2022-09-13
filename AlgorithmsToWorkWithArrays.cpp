@@ -41,7 +41,7 @@ int main() {
     }
     else
     {
-        cout << "Sorry, but array doesn't contains such element";
+        cout << "Sorry, but array doesn't contain such element";
     }
 
     system("pause");
