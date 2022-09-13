@@ -3,12 +3,10 @@
 
 using namespace std;
 
-int findElementIndexByValueInArrayWithBinarySearch(int key, int* targetArray);
-void sortArrayWithQsort(int* targetArray, int sizeOfArray);
+int findElementIndexByValueInArrayWithBinarySearch(int value, int* targetArray);
+void sortArrayWithQsort(int* arrayToSort, int sizeOfArray);
 
 int main() {
-    setlocale(LC_ALL, "rus");
-
     int targetArray[10];
     int value;
     int foundIndex = 0;
@@ -43,7 +41,7 @@ int main() {
     }
     else
     {
-        cout << "Sorry, but array doesn't contain such element";
+        cout << "Sorry, but array doesn't contains such element";
     }
 
     system("pause");
