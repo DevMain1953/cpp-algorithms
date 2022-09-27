@@ -95,8 +95,8 @@ int main() {
       int currentPercentage = 0;
       for (int currentYear = 60; currentYear < years; currentYear = currentYear + 5)
       {
-         int currentYesrInNextLoopExecution = currentYear + 5;
-         if (currentYesrInNextLoopExecution > years)
+         int currentYearInNextLoopExecution = currentYear + 5;
+         if (currentYearInNextLoopExecution > years)
          {
             break;
          }
