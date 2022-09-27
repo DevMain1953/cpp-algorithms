@@ -87,21 +87,20 @@ int main() {
    if (years >= 60)
    {
       const int AMOUNT_OF_PERCENTAGE = 16;
-      const int AMOUNT_OF_SUBJECTS = 2;
       char* percentage[AMOUNT_OF_PERCENTAGE];
       char* percentageOfMen;
       char* percentageOfWomen;
 
       writePercentageTo(percentage);
-      int counter = 0;
+      int currentPercentage = 0;
       for (int currentYear = 60; currentYear < years; currentYear = currentYear + 5)
       {
-         counter++;
-      }
-      int currentPercentage = counter * AMOUNT_OF_SUBJECTS;
-      if (currentPercentage != 0)
-      {
-         currentPercentage = currentPercentage - AMOUNT_OF_SUBJECTS; //to correspond to original algorithm written in BASIC
+         int currentYesrInNextLoopExecution = currentYear + 5;
+         if (currentYesrInNextLoopExecution > years)
+         {
+            break;
+         }
+         currentPercentage = currentPercentage + 2;
       }
       if (currentPercentage < (AMOUNT_OF_PERCENTAGE - 1))
       {
