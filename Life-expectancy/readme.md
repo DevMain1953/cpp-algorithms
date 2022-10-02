@@ -11,3 +11,8 @@ This project is reconstruction of life-expectancy game from BASIC to C.
 
 ## Working on WEB
 ![WEB](web.png)
+------------------
+
+## Working on Android
+![Android](android.png)
+------------------
