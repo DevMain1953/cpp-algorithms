@@ -2,6 +2,12 @@
 This project is reconstruction of life-expectancy game from BASIC to C.
 
 ## Working on Linux
+To run game on Linux you need to download gcc compiler:
+- `sudo apt update`
+Then compile file with source code:
+- `gcc life-expectancy.c -o life` where `life` is name of compiled file
+Then run:
+- `./life` to launch the game.
 ![Linux](linux.png)
 ------------------
 
