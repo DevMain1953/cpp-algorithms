@@ -11,6 +11,7 @@ Then compile file with source code:
 
 Then run:
 - `./life` to launch the game.
+
 ![Linux](linux.png)
 ------------------
 
