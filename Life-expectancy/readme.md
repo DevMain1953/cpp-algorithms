@@ -24,6 +24,7 @@ Then for example in VS Code open terminal and type:
 - `./make.bat`
 
 Then run `a.exe` application.
+
 ![Windows](windows.png)
 ------------------
 
