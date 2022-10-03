@@ -29,6 +29,18 @@ Then run `a.exe` application.
 ------------------
 
 ## Working on WEB
+To run game on WEB you need to convert C code to JS using Emscripten. First of all install it, it's better to do it on Linux:
+- `git clone https://github.com/emscripten-core/emsdk.git`
+- `cd emsdk`
+- `./emsdk install latest`
+- `./emsdk activate latest`
+- `source ./emsdk_env.sh` - to activate PATH and other environment variables in the current terminal
+
+Then run:
+- `emcc life-expectancy.c -s NO_EXIT_RUNTIME=0 -o output.html`
+
+This command will generate html page with JS script. It's important to place all generated files to folder on your runnung HTTP server.
+
 ![WEB](web.png)
 ------------------
 
