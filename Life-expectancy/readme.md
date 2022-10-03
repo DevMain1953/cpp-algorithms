@@ -39,7 +39,7 @@ To run game on WEB you need to convert C code to JS using Emscripten. First of a
 Then run:
 - `emcc life-expectancy.c -s NO_EXIT_RUNTIME=0 -o output.html`
 
-This command will generate html page with JS script. It's important to place all generated files to folder on your runnung HTTP server.
+This command will generate html page with JS script. It's important to place all generated files to folder on your runnung LOCAL HTTP server.
 
 ![WEB](web.png)
 ------------------
