@@ -33,5 +33,7 @@ Then run `a.exe` application.
 ------------------
 
 ## Working on Android
+To run game on Android you need to download and install C/C++ compiler for example from Google Play. Then save file with source code from this repository with `.c` extension and run compiler.
+
 ![Android](android.png)
 ------------------
