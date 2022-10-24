@@ -18,7 +18,7 @@ Then run:
 ## Working on Windows
 To run game on Windows you need to install MinGW-w64, then create file `make.bat` in directory where your source code is and write strings listed below:
 - `PATH=path to mingw64/bin`
-- `gcc -std=c99 -Wall -Wpedantic application.c`
+- `gcc -std=c99 -Wall -Wpedantic life-expectancy.c`
 
 Then for example in VS Code open terminal and type:
 - `./make.bat`
