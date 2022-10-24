@@ -2,7 +2,7 @@
 This project is reconstruction of life-expectancy game from BASIC to C.
 
 ## Working on Linux
-To run game on Linux you need to download gcc compiler:
+To ru game on Linux you need to download gcc compiler:
 - `sudo apt update`
 - `sudo apt install build-essential`
 
